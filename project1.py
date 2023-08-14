@@ -5,7 +5,7 @@ display=[]
 for i in range(len(str(n2))):
     display+="_"
 if(n1==n2):
-    print("YOU ARE A MASTERMIND YOU GOT THE CORRECT NUMBER IN JUST ONE GUESS!!")
+    print("YOU ARE A MASTERMIND! YOU GOT THE CORRECT NUMBER IN JUST ONE GUESS!!")
 ctr=0
 guess=True
 while guess:
@@ -21,11 +21,11 @@ while guess:
     if(count>=0 and count<4):
         print(f"That's not the correct number, you have got {count} correct digits")
         print(display)
-        n2=int(input("Again enter the number: "))
+        n2=int(input("Enter the number again: "))
 
     if n1==n2:
         print("\n")
         print(f"The answer is {display}")
-        print(f"you have got the correct number in {ctr} guesses")
+        print(f"You have got the correct number in {ctr} guesses")
         print("CONGRATS!! YOU ARE A MASTERMIND")
         guess=False
