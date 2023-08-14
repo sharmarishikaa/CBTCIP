@@ -5,20 +5,20 @@ computer_choice=random.choice(choose)
 print(f"Computer choice is {computer_choice}")
 print(f"Your choice is {user_choice}")
 if user_choice==computer_choice:
-    print("It's draw")
+    print("It's a draw")
 elif user_choice=='rock':
     if computer_choice=='paper':
-        print("YOU LOOSE!!")
+        print("YOU LOSE!!")
     elif computer_choice=='scissor':
         print("YOU WIN!!")
 elif user_choice=='paper':
     if computer_choice=='rock':
         print("YOU WIN!!")
     elif computer_choice=='scissor':
-        print("YOU LOOSE!!")
+        print("YOU LOSE!!")
 elif user_choice=='scissor':
     if computer_choice=='rock':
-        print("YOU LOOSE!!")
+        print("YOU LOSE!!")
     elif computer_choice=='paper':
         print("YOU WIN!!")
 else:
